@@ -1,3 +1,4 @@
+/* Initial Styling for Mobile @ 320 X 780; */
 * {
   box-sizing: border-box;
 }
@@ -11,26 +12,91 @@ body {
   line-height: 1.5;
 }
 
-h1 {
-  font-size: 68px;
+header {
+  padding: 12% 0;
 }
 
-nav,
-footer {
-  padding: 1% 0;
-  background-color: #aaa;
+h1 {
+  font-size: 45px;
+  margin-top:250px;
+}
+
+h2 {
+  font-size: 16.5px;
+}
+
+section {
+  min-height: 200px;
+  padding: 6% 0;
+  background-color: #bbb;
+}
+
+.mainSection {
+  height: 33.5em;
+}
+
+.aboutSection {
+  height: 33.5em;
+  background-color: #ddd;
+}
+
+.projectSection {
+  height: 33.5em;
+}
+
+.contactSection {
+  height: 33.5em;
+  background-color: #ddd;
+}
+
+.box {
+  border: 1px solid black;
+  width: 180px;
+  height: 180px;
+  display: inline-block;
+}
+
+
+.icon-luigi {
+  display: flexbox;
+  position: fixed;
+  top: 10px;
+  left: 15px;
+  height: 50px;
+  width: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  border: 1px solid black;
+  align-items: flex-start;
+}
+
+.navIcon {
+  display: flexbox;
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  height: 50px;
+  width: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-items: flex-start;
 }
 
 nav {
   display: flexbox;
   position: fixed;
+  flex-direction: row;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
+  background-color: #aaa;
+  height: 75px;
 }
 
 nav ul {
+  visibility: hidden;
   display: inline-block;
   list-style: none;
 }
@@ -48,26 +114,108 @@ nav a:hover {
   color: black;
 }
 
+@media screen and (min-width:425px){
+
+.icon-luigi {
+  top: 5px;
+}
+
+.navIcon{
+  top: 5px;
+}
 header {
-  padding: 12% 0;
+  padding: 5% 0;
 }
 
-section {
-  min-height: 200px;
-  padding: 6% 0;
-  background-color: #bbb;
+h2 {
+  font-size: 19.2px;
 }
 
-section:nth-child(even) {
-  background-color: #ddd;
+.mainSection {
+  height: 35.5em;
 }
 
-.icon {
-  height: 50px;
-  width: 50px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border-radius: 50%;
-  vertical-align: middle;
-  border: 1px solid black;
+.aboutSection {
+  height: 34em;
+}
+
+.projectSection {
+  height: 34em;
+}
+
+.contactSection {
+  height: 34em;
+}
+}
+@media screen and (min-width:768px){
+  h2 {
+    font-size: 22px;
+  }
+  
+  .mainSection {
+    height: 33.5em;
+  }
+
+  .box {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width:1024px){
+  header {
+    padding: 2% 0;
+  }
+
+  nav {
+    height: 100px;
+  }
+
+  .icon-luigi {
+    height: 75px;
+    width: 75px;
+  }
+
+  .navIcon {
+    visibility: hidden;
+  }
+
+  nav ul {
+    visibility: visible;
+    position: fixed;
+    top: 10px;
+    right: 15px;
+  }
+  
+  nav li {
+    font-size: 36px;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .mainSection {
+    height: 35.5em;
+  }
+  
+  .aboutSection {
+    height: 32.5em;
+  }
+  
+  .projectSection {
+    height: 32.5em;
+  }
+
+  p {
+    font-size: 23px;
+  }
+  
+  .contactSection {
+    height: 34em;
+  }
 }
