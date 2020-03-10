@@ -157,6 +157,7 @@ a:hover {
   align-items: flex-start;
 }
 
+/* Will Implement Later
 #navIcon {
   display: flexbox;
   position: fixed;
@@ -169,7 +170,7 @@ a:hover {
   align-items: flex-start;
   border: 1px solid black;
 }
-
+*/
 nav {
   display: flexbox;
   position: fixed;
@@ -250,9 +251,11 @@ header {
   top: 5px;
 }
 
+/* Will Implement Later
 #navIcon{
   top: 5px;
 }
+*/
 header {
   padding: 5% 0;
 }
@@ -329,10 +332,11 @@ h2 {
     width: 80px;
   }
 
+  /* Will Implement Later
   #navIcon {
     visibility: hidden;
   }
-
+*/
   nav {
     height: 100px;
   }
@@ -457,10 +461,11 @@ h2 {
     width: 120px;
     top: 0;
   }
-
+/* Will Implement Later
   #navIcon {
     visibility: hidden;
   }
+  */
 
   nav ul {
     visibility: visible;
