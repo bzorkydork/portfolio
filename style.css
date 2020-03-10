@@ -3,26 +3,59 @@
   box-sizing: border-box;
 }
 
+div, footer {
+  background-color: #220448;
+  color: gold;
+}
 
 body {
   font-family: 'Oxanium', bold;
   font-size: 20px;
-  color: #444;
+  color: silver;
   text-align: center;
   line-height: 1.5;
 }
 
 header {
-  padding: 12% 0;
+  padding: 10% 0;
 }
 
 h1 {
-  font-size: 45px;
-  margin-top:250px;
+  font-size: 38px;
+  color: silver;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 h2 {
-  font-size: 16.5px;
+  font-size: 32px;
+
+}
+
+h3 {
+  font-size: 16.50px;
+}
+
+.aboutText {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 16.50px;
+  text-align: left;
+}
+
+#aboutHeader {
+  text-align: left;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+#projectHeader {
+  text-align: left;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px
 }
 
 section {
@@ -31,33 +64,86 @@ section {
   background-color: #bbb;
 }
 
-.mainSection {
-  height: 33.5em;
+#mainSection {
+  height: 34.5em;
+  background-color: #3B235A;
 }
 
-.aboutSection {
-  height: 33.5em;
-  background-color: #ddd;
+.mainText {
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.projectSection {
-  height: 33.5em;
+#aboutSection {
+  height: 34em;
+  background-color: #3B235A;}
+
+#projectSection {
+  height: 34em;
+  background-color: #3B235A;
 }
 
-.contactSection {
-  height: 33.5em;
-  background-color: #ddd;
+.projectText {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 16.50px;
+  text-align: left;
 }
 
-.box {
-  border: 1px solid black;
+#quizLogo {
+  border: 1px solid gold;
   width: 180px;
   height: 180px;
   display: inline-block;
+  background-color: black;
 }
 
+#htmlIcon {
+  display: inline-block;
+  width: 50px;
+  height: 18px;
+}
 
-.icon-luigi {
+a {
+  color: gold;
+}
+
+a:hover {
+  color: blue;
+}
+
+#contactSection {
+  height: 34em;
+  background-color: #3B235A;
+}
+
+.contactText {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#contactHeader {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#imageSelf {
+  border: 1px solid black;
+  width: 260px;
+  height: 160px;
+  display: inline-block;
+  background-color: black;
+  margin-top: 20px;
+}
+
+#icon-luigi {
   display: flexbox;
   position: fixed;
   top: 10px;
@@ -71,7 +157,7 @@ section {
   align-items: flex-start;
 }
 
-.navIcon {
+#navIcon {
   display: flexbox;
   position: fixed;
   top: 10px;
@@ -92,8 +178,12 @@ nav {
   left: 0;
   right: 0;
   z-index: 10;
-  background-color: #aaa;
+  background-color: #220448;
   height: 75px;
+}
+
+main ul {
+  list-style: none;
 }
 
 nav ul {
@@ -112,49 +202,231 @@ nav li::after {
 }
 
 nav a:hover {
-  color: black;
+  color: blue;
 }
 
+@media screen and (min-width:375px){
+header {
+  padding: 5% 0;
+}
+#mainSection {
+  height: 35.7em;
+}
+
+.mainText {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#aboutHeader {
+  padding-left: 20px;
+}
+
+.aboutText{
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#projectHeader {
+  padding-left: 11px;
+}
+
+.projectText {
+  padding-left: 25px;
+  padding-right: 125px;
+}
+
+#imageSelf {
+  width: 300px;
+  height: 190px;
+}
+}
 @media screen and (min-width:425px){
 
-.icon-luigi {
+#icon-luigi {
   top: 5px;
 }
 
-.navIcon{
+#navIcon{
   top: 5px;
 }
 header {
   padding: 5% 0;
 }
 
+h1 {
+  padding-left: 15px;
+}
+
 h2 {
   font-size: 19.2px;
 }
 
-.mainSection {
+#mainSection {
   height: 35.5em;
 }
 
-.aboutSection {
+.mainText {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 26px;
+}
+
+#aboutSection {
+  height: 34em;
+  padding-top: 12px;
+}
+
+#aboutHeader{
+  font-size: 35px;
+}
+
+.aboutText {
+  font-size: 19px;
+}
+
+#projectHeader {
+  font-size: 35px;
+  padding-left: 25px;
+}
+
+#projectSection {
   height: 34em;
 }
 
-.projectSection {
+.projectText {
+  font-size: 18px;
+  padding-right: 120px;
+}
+
+#contactSection {
   height: 34em;
 }
 
-.contactSection {
-  height: 34em;
+#contactHeader {
+  font-size: 32px;
+}
+
+.contactText {
+  font-size: 22px;
+}
+
+#imageSelf {
+  width: 370px;
+  height: 220px;
 }
 }
 @media screen and (min-width:768px){
+  
+  #icon-luigi {
+    top: 6px;
+    height: 80px;
+    width: 80px;
+  }
+
+  #navIcon {
+    visibility: hidden;
+  }
+
+  nav {
+    height: 100px;
+  }
+
+  nav ul {
+    visibility: visible;
+    position: fixed;
+    right: 15px;
+    top: 12px;
+  }
+
+  nav li {
+    font-size: 28px;
+  }
+  header {
+    padding: 4% 0;
+  }
+
+  h1 {
+    font-size: 54px;
+    padding-left: 30px;
+  }
+  
   h2 {
     font-size: 22px;
   }
   
-  .mainSection {
-    height: 33.5em;
+  #mainSection {
+    height: 34.5em;
+    padding-top: 4% 0;
+  }
+
+  .mainText {
+    font-size: 32px;
+    padding-left: 30px;
+  }
+
+  #aboutHeader {
+    text-align: left;
+    padding-left: 30px;
+    font-size: 45px;
+  }
+
+  #aboutSection {
+    height: 32.8em;
+  }
+
+  .aboutText {
+    text-align: center;
+    font-size: 24px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  #projectHeader {
+    padding-left: 30px;
+    font-size: 45px;
+  }
+
+  #projectSection {
+    height: 32.8em;
+    padding: 3% 0;
+  }
+
+  .projectText {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #contactHeader {
+    font-size: 45px;
+    padding-left: 30px;
+  }
+
+  .table {
+    display: table;
+    margin: 0 auto;
+  }
+  
+  main ul {
+    display: inline;
+    padding-left: 30px;
+    text-align: center;
+  }
+
+  main li {
+    float: left;
+  }
+
+
+  #imageSelf {
+    margin-top: 60px;
+    width: 500px;
+    height: 300px;
   }
 
   .box {
@@ -162,34 +434,38 @@ h2 {
     height: 300px;
   }
 }
-
 @media screen and (min-width:1024px){
   header {
     padding: 2% 0;
   }
 
+  div, footer {
+    font-size:32px;
+  }
+
   nav {
-    height: 100px;
+    height: 130px;
   }
 
-  .icon-luigi {
-    height: 75px;
-    width: 75px;
+  #icon-luigi {
+    height: 120px;
+    width: 120px;
+    top: 0;
   }
 
-  .navIcon {
+  #navIcon {
     visibility: hidden;
   }
 
   nav ul {
     visibility: visible;
     position: fixed;
-    top: 10px;
+    top: 15px;
     right: 15px;
   }
   
   nav li {
-    font-size: 36px;
+    font-size: 38px;
   }
 
   h1 {
@@ -200,23 +476,43 @@ h2 {
     font-size: 25px;
   }
 
-  .mainSection {
-    height: 35.5em;
+  #mainSection {
+    height: 34.5em;
   }
   
-  .aboutSection {
-    height: 32.5em;
+  #aboutSection {
+    height: 30.5em;
   }
   
-  .projectSection {
-    height: 32.5em;
+  #projectSection {
+    height: 31em;
+  }
+
+  .projectText {
+    font-size: 19px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  #quizLogo {
+    width: 270px;
+    height: 240px;
   }
 
   p {
     font-size: 23px;
   }
   
-  .contactSection {
-    height: 34em;
+  #contactSection {
+    height: 31.5em;
+    padding: 2% 0;
   }
+}
+@media screen and (min-width:1280px){
+}
+@media screen and (min-width:1366px){
+}
+@media screen and (min-width:1440px){
+}
+@media screen and (min-width:1600px){
 }
