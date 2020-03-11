@@ -1,11 +1,24 @@
 /* Initial Styling for Mobile @ 320 X 780; */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-div, footer {
+div {
+  background-color: #220448;
+}
+
+footer {
   background-color: #220448;
   color: gold;
+}
+
+.section-divier {
+  width: 65%;
+  margin: auto;
+  border-bottom: 2px solid silver;
+  background-color: #220448;
 }
 
 body {
@@ -17,7 +30,8 @@ body {
 }
 
 header {
-  padding: 10% 0;
+  padding:0;
+  text-align: left;
 }
 
 h1 {
@@ -38,10 +52,13 @@ h3 {
 }
 
 .aboutText {
-  padding-left: 15px;
-  padding-right: 15px;
-  font-size: 16.50px;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: 0.7em;
   text-align: left;
+  max-width: 350px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #aboutHeader {
@@ -65,7 +82,7 @@ section {
 }
 
 #mainSection {
-  height: 34.5em;
+  height: 19.5em;
   background-color: #3B235A;
 }
 
@@ -76,19 +93,29 @@ section {
 }
 
 #aboutSection {
-  height: 34em;
+  height: 31em;
   background-color: #3B235A;}
 
 #projectSection {
-  height: 34em;
+  height: 31em;
   background-color: #3B235A;
 }
 
 .projectText {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
   font-size: 16.50px;
   text-align: left;
+  margin-bottom: 10px;
+}
+
+.projectLinks {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  font-size: 16.50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #quizLogo {
@@ -114,99 +141,91 @@ a:hover {
 }
 
 #contactSection {
-  height: 34em;
+  height: 22.9em;
   background-color: #3B235A;
 }
 
 .contactText {
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
   padding-left: 30px;
   padding-right: 30px;
+  font-size: 25px;
 }
 
 #contactHeader {
   text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   padding-left: 30px;
   padding-right: 30px;
 }
 
 #imageSelf {
-  border: 1px solid black;
-  width: 260px;
-  height: 160px;
+  border: 2px solid gold;
+  width: 215px;
+  height: 145px;
   display: inline-block;
   background-color: black;
-  margin-top: 20px;
+  margin-top: 5px;
+}
+
+.navbar {
+  font-size: 18px;
+  background-color: #220448;
+  padding-bottom: 10px;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.main-nav {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: gold;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer; 
+  color: gold;
+  font-size: 24px;
+}
+
+.active {
+  display: block;
 }
 
 #icon-luigi {
-  display: flexbox;
-  position: fixed;
-  top: 10px;
-  left: 15px;
-  height: 50px;
-  width: 50px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 65px;
+  width: 65px;
   border-radius: 50%;
   border: 1px solid black;
-  align-items: flex-start;
-}
-
-/* Will Implement Later
-#navIcon {
-  display: flexbox;
-  position: fixed;
-  top: 10px;
-  right: 15px;
-  height: 50px;
-  width: 50px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  align-items: flex-start;
-  border: 1px solid black;
-}
-*/
-nav {
-  display: flexbox;
-  position: fixed;
-  flex-direction: row;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  background-color: #220448;
-  height: 75px;
-}
-
-main ul {
-  list-style: none;
-}
-
-nav ul {
-  visibility: hidden;
-  display: inline-block;
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-}
-
-nav li::after {
-  content: "|";
-  margin-left: 5px;
-}
-
-nav a:hover {
-  color: blue;
 }
 
 /* 375x780 */
+/*
 @media screen and (min-width:375px){
 header {
   padding: 5% 0;
@@ -244,18 +263,17 @@ header {
   height: 190px;
 }
 }
+*/
+
 /* 425px x 780x */
+/*
 @media screen and (min-width:425px){
 
 #icon-luigi {
   top: 5px;
 }
 
-/* Will Implement Later
-#navIcon{
-  top: 5px;
-}
-*/
+
 header {
   padding: 5% 0;
 }
@@ -322,37 +340,49 @@ h2 {
   height: 220px;
 }
 }
-
+*/
 /* 768 x 780 */
 @media screen and (min-width:768px){
   
   #icon-luigi {
-    top: 6px;
+    margin-top: 0;
     height: 80px;
     width: 80px;
   }
-
-  /* Will Implement Later
-  #navIcon {
-    visibility: hidden;
-  }
-*/
-  nav {
+  .navbar {
     height: 100px;
-  }
-
-  nav ul {
-    visibility: visible;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0px;
+    align-items:center;
     position: fixed;
-    right: 15px;
-    top: 12px;
+    width: 100%;
   }
 
-  nav li {
-    font-size: 28px;
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+  .main-nav li {
+    margin: 0;
   }
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+  .logo:hover,
+  .nav-links:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+
   header {
-    padding: 4% 0;
+    padding-bottom: 70px;
   }
 
   h1 {
@@ -365,12 +395,12 @@ h2 {
   }
   
   #mainSection {
-    height: 34.5em;
-    padding-top: 4% 0;
+    height: 32.5em;
+    padding-top: 7%;
   }
 
   .mainText {
-    font-size: 32px;
+    font-size: 36px;
     padding-left: 30px;
   }
 
@@ -381,14 +411,20 @@ h2 {
   }
 
   #aboutSection {
-    height: 32.8em;
+    height: 34.5em;
+    padding-top: 2%;
   }
 
   .aboutText {
-    text-align: center;
-    font-size: 24px;
-    padding-left: 25px;
-    padding-right: 25px;
+    text-align: left;
+    font-size: 1em;
+    padding-left: 130px;
+    padding-right: 130px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+    max-width: 800px;
   }
 
   #projectHeader {
@@ -403,11 +439,11 @@ h2 {
 
   .projectText {
     font-size: 25px;
-    text-align: center;
+    text-align: left;
     margin-top: 15px;
     margin-bottom: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   #contactHeader {
@@ -415,26 +451,31 @@ h2 {
     padding-left: 30px;
   }
 
+  #contactSection {
+    height: 22em;
+    background-color: #3B235A;
+  }
+
   .table {
     display: table;
     margin: 0 auto;
   }
   
-  main ul {
+  .contact-ul {
     display: inline;
     padding-left: 30px;
     text-align: center;
+    list-style: none;
   }
 
-  main li {
+  #contactSection li {
     float: left;
   }
 
-
   #imageSelf {
-    margin-top: 60px;
-    width: 500px;
-    height: 300px;
+    margin-top: 10px;
+    width: 375px;
+    height: 215px;
   }
 
   .box {
@@ -445,35 +486,50 @@ h2 {
 /* 1024 x 768 */
 @media screen and (min-width:1024px){
   header {
-    padding: 2% 0;
-  }
-
-  div, footer {
-    font-size:32px;
-  }
-
-  nav {
-    height: 130px;
+    padding: 0;
   }
 
   #icon-luigi {
+    margin-top: 0;
+    height: 85px;
+    width: 85px;
+  }
+  .navbar {
     height: 120px;
-    width: 120px;
-    top: 0;
-  }
-/* Will Implement Later
-  #navIcon {
-    visibility: hidden;
-  }
-  */
-
-  nav ul {
-    visibility: visible;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0px;
+    align-items:center;
     position: fixed;
-    top: 15px;
-    right: 15px;
+    width: 100%;
   }
-  
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+  .main-nav li {
+    margin: 0;
+  }
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+  .logo:hover,
+  .nav-links:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+
+footer {
+    font-size:32px;
+  }
+
   nav li {
     font-size: 38px;
   }
@@ -487,11 +543,17 @@ h2 {
   }
 
   #mainSection {
-    height: 34.5em;
+    height: 36.5em;
+    padding-top: 12%;
   }
   
   #aboutSection {
-    height: 30.5em;
+    height: 30em;
+  }
+
+  .aboutText {
+    font-size: 20px;
+    max-width: 1200px;
   }
   
   #projectSection {
@@ -502,6 +564,7 @@ h2 {
     font-size: 19px;
     padding-left: 70px;
     padding-right: 70px;
+    max-width: 1000px;
   }
 
   #quizLogo {
@@ -514,10 +577,18 @@ h2 {
   }
   
   #contactSection {
-    height: 31.5em;
+    height: 28em;
     padding: 2% 0;
   }
+
+  #imageSelf {
+    margin-top: 25px;
+    width: 420px;
+    height: 275px;
+  }
+
 }
+/*
 @media screen and (min-width:1280px){
 
   #mainSection {
@@ -581,3 +652,4 @@ h2 {
     height: 39.5em;
   }
 }
+*/
