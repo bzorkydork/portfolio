@@ -9,6 +9,11 @@ div {
   background-color: #220448;
 }
 
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 footer {
   background-color: #220448;
   color: gold;
@@ -27,6 +32,7 @@ body {
   color: silver;
   text-align: center;
   line-height: 1.5;
+  background-color: #3B235A;
 }
 
 header {
@@ -38,8 +44,8 @@ h1 {
   font-size: 38px;
   color: silver;
   text-align: left;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 h2 {
@@ -63,15 +69,16 @@ h3 {
 
 #aboutHeader {
   text-align: left;
-  padding-left: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
   margin-bottom: 15px;
   margin-top: 15px;
 }
 
 #projectHeader {
   text-align: left;
-  padding-left: 15px;
-  margin-bottom: 15px;
+  padding-left: 35px;
+  margin-bottom: 35px;
   margin-top: 15px
 }
 
@@ -88,8 +95,8 @@ section {
 
 .mainText {
   text-align: left;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 #aboutSection {
@@ -158,8 +165,8 @@ a:hover {
   text-align: left;
   margin-top: 5px;
   margin-bottom: 5px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 #imageSelf {
@@ -224,124 +231,6 @@ a:hover {
   border: 1px solid black;
 }
 
-/* 375x780 */
-/*
-@media screen and (min-width:375px){
-header {
-  padding: 5% 0;
-}
-#mainSection {
-  height: 35.7em;
-}
-
-.mainText {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#aboutHeader {
-  padding-left: 20px;
-}
-
-.aboutText{
-  font-size: 18px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-#projectHeader {
-  padding-left: 11px;
-}
-
-.projectText {
-  padding-left: 25px;
-  padding-right: 125px;
-}
-
-#imageSelf {
-  width: 300px;
-  height: 190px;
-}
-}
-*/
-
-/* 425px x 780x */
-/*
-@media screen and (min-width:425px){
-
-#icon-luigi {
-  top: 5px;
-}
-
-
-header {
-  padding: 5% 0;
-}
-
-h1 {
-  padding-left: 15px;
-}
-
-h2 {
-  font-size: 19.2px;
-}
-
-#mainSection {
-  height: 35.5em;
-}
-
-.mainText {
-  padding-left: 15px;
-  padding-right: 15px;
-  font-size: 26px;
-}
-
-#aboutSection {
-  height: 34em;
-  padding-top: 12px;
-}
-
-#aboutHeader{
-  font-size: 35px;
-}
-
-.aboutText {
-  font-size: 19px;
-}
-
-#projectHeader {
-  font-size: 35px;
-  padding-left: 25px;
-}
-
-#projectSection {
-  height: 34em;
-}
-
-.projectText {
-  font-size: 18px;
-  padding-right: 120px;
-}
-
-#contactSection {
-  height: 34em;
-}
-
-#contactHeader {
-  font-size: 32px;
-}
-
-.contactText {
-  font-size: 22px;
-}
-
-#imageSelf {
-  width: 370px;
-  height: 220px;
-}
-}
-*/
-/* 768 x 780 */
 @media screen and (min-width:768px){
   
   #icon-luigi {
@@ -387,7 +276,7 @@ h2 {
 
   h1 {
     font-size: 54px;
-    padding-left: 30px;
+    padding-left: 130px;
   }
   
   h2 {
@@ -401,12 +290,12 @@ h2 {
 
   .mainText {
     font-size: 36px;
-    padding-left: 30px;
+    padding-left: 130px;
   }
 
   #aboutHeader {
     text-align: left;
-    padding-left: 30px;
+    padding-left: 130px;
     font-size: 45px;
   }
 
@@ -428,7 +317,7 @@ h2 {
   }
 
   #projectHeader {
-    padding-left: 30px;
+    padding-left: 130px;
     font-size: 45px;
   }
 
@@ -442,13 +331,13 @@ h2 {
     text-align: left;
     margin-top: 15px;
     margin-bottom: 15px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 130px;
+    padding-right: 130px;
   }
 
   #contactHeader {
     font-size: 45px;
-    padding-left: 30px;
+    padding-left: 130px;
   }
 
   #contactSection {
@@ -562,7 +451,7 @@ footer {
 
   .projectText {
     font-size: 19px;
-    padding-left: 70px;
+    padding-left: 130px;
     padding-right: 70px;
     max-width: 1000px;
   }
@@ -588,68 +477,3 @@ footer {
   }
 
 }
-/*
-@media screen and (min-width:1280px){
-
-  #mainSection {
-    height: 33.5em;
-  }
-
-  #aboutSection {
-    height: 29.5em;
-  }
-
-
-  #projectSection {
-    height: 29.5em;
-  }
-
-  #contactSection {
-    height: 29.5em;
-  }
-}
-
-@media screen and (min-width:1440px){
-  
-  #mainSection {
-    height: 39.8em;
-    padding-left: 80px;
-  }
-
-  #aboutSection {
-    height: 36em;
-  }
-
-  .aboutText {
-    font-size: 30px;
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-
-  #projectSection {
-    height: 36em;
-  }
-
-  .projectText {
-    font-size: 27px;
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-
-  #htmlIcon {
-    width: 70px;
-    height: 25px;
-  }
-
-  #contactSection {
-    height: 36em;
-  }
-
-
-}
-@media screen and (min-width:1600px){
-  #mainSection {
-    height: 39.5em;
-  }
-}
-*/
